@@ -27,10 +27,33 @@ project "yaml-cpp"
 		pic "On"
 		systemversion "latest"
 
-	filter "configurations:Debug"
-		runtime "Debug"
-		symbols "on"
+    filter "configurations:Debug-OpenGL"
+        symbols "On"
 
-	filter "configurations:Release"
-		runtime "Release"
-		optimize "on"
+    filter "configurations:Debug-Vulkan"
+        symbols "On"
+		
+    filter "configurations:Debug-DX11"
+        symbols "On"
+
+    filter "configurations:Debug-DX12"
+		symbols "On"
+	
+    filter "configurations:Debug-Metal"
+        symbols "On"
+
+    filter "configurations:Release-OpenGL"
+        optimize "On"
+
+    filter "configurations:Release-Vulkan"
+        optimize "On"
+
+    filter "configurations:Release-DX11"
+        optimize "On"
+
+    filter "configurations:Release-DX12"
+		optimize "On"
+	
+    filter "configurations:Release-Metal"
+        optimize "On"
+
